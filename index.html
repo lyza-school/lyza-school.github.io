@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyza Marino Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&
+    display=swap" 
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="images/favicon_lm.png" type="image/x-icon" />
+</head>
+<body>
+    <nav class="navbar bg-teal">
+        <div class="container">
+            <div class="main-menu">
+                <ul>
+
+                    <li>
+                        <a class="btn" href="#projects_id">Projects</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="#resume_id">Resume</a>
+                    </li>
+                    <li>
+                        <a class="btn"  href="#footer_id">Contact Me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Picture -->
+     <section class="photo">
+        <div class="container-no-padding">
+            <div class="photo-content">
+                <img src="Images/BostonBackgroundStock.jpg" alt="Picture of Me">
+            </div>
+        </div>
+     </section>
+     <section class="bio">
+        <div class="teal-bar"></div>
+        <div class="container">
+            <div class="bio-content">
+                <h1 class="bio-text text-xxl">
+                    Hi! I'm Lyza Marino, an undergraduate neuroscience student at the University of Rochester. 
+                </h1>
+                <h1 class="bio-text text-xxl">
+                    Here, you can look at some of the things I'm working on.
+
+                </h1>
+            </div>
+        </div>
+     </section>
+    <section class="projects bg-black">
+        <div class="container" id="projects_id">
+            <h3 class="projects-heading text-xxl">
+                Projects:
+            </h3>
+            <div class="projects-grid">
+                <div class="card">
+                    <h3 class="text-lg"><strong>
+                        STA of a simple cell with vertical RF given by a 2D Gabor function
+                    </strong></h3>
+                    <h4>
+                        This code is from an assignment for a computational neuroscience course at the University of Rochester.
+The purpose is to use a 2D Gabor function to implement a simple cell with a vertical RF, and an output nonlinearity of f(x) = x2 if x > 0, 
+otherwise f(x) = 0. The RF extended ±5 degrees in the x and y-directions. 
+The image was discretized such that 1 pixel corresponds to a 0.2 x 0.2 degree span (50 x 50 image). 
+                    </h4>
+                    <div class="image-row">
+                        <img src="Images/Figure_1.png" alt="Simple cell vertical receptive field given by a 2D Gabor function">
+                        <img src="Images/Figure_2.png" alt="Cross section at y=0">
+                    </div>
+                    <div class="image-row">
+                        <img src="Images/Figure_3.png" alt="Vertical Grating Image">
+                        <img src="Images/Figure_4.png" alt="Response to vertical grating image">
+                    </div>
+                    <img src="Images/Figure_8.png" alt="STA Analysis with a varying number of images">
+                    <a href="https://github.com/lyza-marino/simplecell_sta">Github Repository</a>
+
+                </div>
+                <div class="card">
+                    <h3 class="text-lg"><strong>
+                        Leaky Integrate-and-Fire Neuron Model
+                    </strong></h3>
+                    <h4>
+This is a project for a computational neuroscience course to simulate a leaky integrate-and-fire neuron in python using basic Euler approximation. 
+It generates plots of membrane potential traces under different input noise conditions, Inter-spike interval (ISI) histograms with coefficient of variation (CV), 
+and Spike rate vs input noise level. The model can be used to explore stochastic firing properties of neurons and to visualize how input variability affects neural coding.                    </h4>
+                    <img src="Images/Figure_1_LIF.png" alt="LIF">
+                    <p><a href="github.com/lyza-marino/lifmodel">Github Repository</a></p>
+                </div>
+                <div class="card">
+                    <h3><strong>
+Markov chain Monte Carlo Gibbs Sampling of Projective Fields
+                    </strong></h3>
+                    <h4>
+                        This code is from an assignment for a computational neuroscience course at the University of Rochester.
+
+The assignment is to model V1 neurons under the assumption that they perform inference in a linear Gaussian model with binary latents by neuron sampling:
+</h4>
+<img src="Images/sampling_equation.png" alt="Sampling equation">
+<h4>
+CI is a diagonal matrix with diagonal elements being 0.1 (the variance of the independent pixel noise).
+The Bernoulli prior over the latents (the prior probability of any one latent being 1): p(ri = 1) = 0.04
+Τhe 64 projective fields used were provided beforehand, but more could be generated using a 2D Gabor function.
+                    </h4>
+                    <img src="Images/ProjectiveFields.png" alt="Covariance Matrix">
+                    <img src="Images/PF13PF29.png" alt="">
+                    <img src="Images/ReconstructedPF13PF29.png" alt="">
+                    <img src="Images/PF13PF29MSE.png" alt="">
+                    <img src="Images/OrientationTuningCurves.png" alt="">
+                    <p><a href="github.com/lyza-marino/pf-gibbs-sampling">Github Repository</a></p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="resume bg-white">
+        <div class="container-sm" id="resume_id">
+            <h3 class="resume text-xxl text-center">
+                Resume                
+            </h3>
+                <div class="card bg-teal">
+                    <img src="Images/BIOResumeCOMPNSCI-1.png" alt="Resume Photo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+         <footer class="footer bg-black">
+            <div class="container" id="footer_id">
+                <div class="footer-grid">
+                    <div><h4>Relevant Links</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/lyza-marino" class="fab fa-linkedin">LinkedIn</a></li>
+                        <li><a href="https://github.com/lyza-marino" class="fab fa-github">GitHub</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:lmarino6@u.rochester.edu">lmarino6@u.rochester.edu</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </footer>  
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
